@@ -1,0 +1,6 @@
+langchain_openai
+langchain_text_splitters
+fastapi
+pybloom-live
+langchain-chroma
+langchain-siliconflow
