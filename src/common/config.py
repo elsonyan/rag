@@ -1,6 +1,6 @@
 import os
 
-api_key = "sk-odrdsvtdzhnsnqtwapxfrnjsbgnnopagutmmwimvsxljktbm"
+api_key = "sk-odrdsvtdzhnsnqtwapxfrnjsbgnnopagutmmwimvsxljktbm" # expired
 llm_base_url = "https://api.siliconflow.cn/v1"
 llm_model = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
 silicon_embedding_base_url = "https://api.siliconflow.cn/v1/embeddings"
