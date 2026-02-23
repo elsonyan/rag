@@ -1,6 +1,10 @@
 langchain_openai
 langchain_text_splitters
-fastapi
+fastapi~=0.131.0
 pybloom-live
 langchain-chroma
 langchain-siliconflow
+pathlib~=1.0.1
+requests~=2.31.0
+pydantic~=2.12.5
+uvicorn~=0.41.0

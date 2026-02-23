@@ -23,6 +23,7 @@ class ChromaDB:
             self.vector_store.add_documents(documents=text, ids=[sha256(t.encode()).hexdigest() for t in text])
 
     def search_documents(self, text: Optional[str | List[str]], k: int = cfg.similarity_search_k) -> List[Document]:
+        print(cfg.chroma_folder,text)
         if isinstance(text, str):
             return self.vector_store.similarity_search(query=text, k=k)
         if isinstance(text, list):

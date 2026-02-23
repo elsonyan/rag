@@ -11,7 +11,7 @@ def print_line():
 # print(response.json().get("response"))
 
 print_line()
-response = requests.post("http://localhost:8000/rag",
+response = requests.post("http://localhost:8000/chat/rag",
                          headers={"Content-Type": "application/json"},
                          json={"query": "电话是多少？我没有你们的货币怎么办？"})
 print(response.json().get("response"))

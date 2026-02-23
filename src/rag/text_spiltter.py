@@ -71,12 +71,10 @@ def splitter(file_name: str,
              file_type=None
              ):
     file_type = file_type if file_type else get_file_type(file_name)
-    match file_type:
-        case "txt":
-            return _text_splitter(_read_text(file_name))
+    if file_type == "txt":
+        return _text_splitter(_read_text(file_name))
 
-        case _:
-            return None
+    return None
 
 
 def text_save(text: Optional[str | list[str]], bloom_conn: BloomTextDedup):
