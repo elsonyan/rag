@@ -5,7 +5,6 @@ llm_base_url = "https://api.siliconflow.cn/v1"
 llm_model = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
 silicon_embedding_base_url = "https://api.siliconflow.cn/v1/embeddings"
 silicon_embedding_model = "netease-youdao/bce-embedding-base_v1"
-embedding_model = "text-embedding-v4"
 chunk_size = 100
 chunk_overlap = 10
 similarity_search_k = 30
