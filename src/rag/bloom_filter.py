@@ -2,8 +2,11 @@
 import os
 import hashlib
 from datetime import datetime
+from pathlib import Path
+
 from pybloom_live import ScalableBloomFilter
-from src.common import config as cfg
+
+from src.core import config as cfg
 
 
 class BloomTextDedup:
@@ -23,8 +26,7 @@ class BloomTextDedup:
             initial_capacity: 初始容量（预计存储的元素数量）
             error_rate: 误判率（0.001 = 0.1%）
         """
-        if not os.path.exists(cfg.bloom_folder):
-            os.mkdir(cfg.bloom_folder)
+        Path(cfg.bloom_folder).mkdir(parents=True, exist_ok=True)
         self.db_path = db_path
         self.initial_capacity = initial_capacity
         self.error_rate = error_rate
